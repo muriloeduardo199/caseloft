@@ -1,12 +1,16 @@
 {
     "configurations": [
         {
-            "name": "Python: Módulo",
+            "name": "Main",
             "type": "python",
             "request": "launch",
-            "module": "pytest",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
             "args": [
-                "tests"
+                "-i",
+                "./tests/arquivos_pdf",
+                "-o",
+                "./tests/extracao.xlsx",
             ]
         }
     ]
